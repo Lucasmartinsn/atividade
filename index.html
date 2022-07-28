@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALCULADORA/IMC</title>
-    <link rel="stylesheet" href="principal.css">
-</head>
-
-<body style="background-color: whitesmoke;">
-    
-    <div class="DIV_GERAL" >
-        <div id="DIV_CAL">
-            <h1>CALCULADORA</h1>
-            <p style="color: white;"> A calcularora medir o seu indice de massa corporal(IMC)</p>
-            <h3>Digite sua altura e peso</h3>
-           
-            <div class="altura">
-                <h2>Altura(cm)</h2>
-                <input id="altura" type="number">
+<html>
+ <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./principal.css">
+    <script type="text/javascript" src="calculadora.js"></script>
+ </head>
+ <body>
+    <div class="geraldiv">
+        <div id="teste">
+            <div class="divcalculadora">
+                <h1>Calculadora de IMC</h1>
+                 <h3>Altura:</h3><input id="num1" type="number"> <br />
+                 <h3>Peso:</h3><input id="num2" type="number"> <br />
+                 <input type="radio" name="calc" id="soma"/> precione<br />
+                  <button onclick="main()">Calcular</button><br />
+            
+                  <h3>O seu IMC è:</h3> <div id="resp"></div>
             </div>
-            <div class="altura">
-                <h2>Peso(kg)</h2>
-                <input id="peso" type="number">
+            <div class="divinfo">
+                <p>
+                    Listagem de resultados do IMC <br> <br>
+                    MENOR QUE 18,5	MAGREZA <br>
+                    ENTRE 18,5 E 24,9	NORMAL	<br>
+                    ENTRE 25,0 E 29,9	SOBREPESO	I <br>
+                    ENTRE 30,0 E 39,9	OBESIDADE	II <br>
+                    MAIOR QUE 40,0	OBESIDADE GRAVE	III <br>
+                </p>
             </div>
-            <button onclick="calculadora()">Calcular</button>
         </div>
     </div>
-    <script src="calculadora.js"></script>
-
-</body>
-
+ </body>
 </html>
