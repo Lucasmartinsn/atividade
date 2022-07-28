@@ -1,21 +1,20 @@
-function calculadora(){
-    var altura = (document.getElementById("altura").value)/100
-    var peso = document.getElementById("peso").value
+function main()
+{
+ var resp = document.getElementById('resp');
+ var num1 = parseFloat(document.getElementById("num1").value);
+ var num2 = parseFloat(document.getElementById("num2").value);
+ var texto='';
 
-    var resultado = peso/(altura*altura);
+ if(document.getElementById('soma').checked)
+  texto = soma(num1, num2);
+ 
 
-    if (resultado<18.5){
-        window.alert("o baixo do peso")
-    }else if(resultado<24.9){
-        window.alert("Pesso ideal(continui assim)")
-    }
-    else if(resultado<29.9){
-        window.alert("você estar com SOBREPESO")
-    }
-    else if(resultado<39.9){
-        window.alert("você estar OBESIDADE")
-    }
-    else if(resultado>40.0){
-        window.alert("OBESIDADE Grave(procure um medico")
-    }
+ resp.innerHTML = texto;
 }
+
+function soma(x, y)
+{
+  
+    return (y/((x*x)/10000));
+}
+
