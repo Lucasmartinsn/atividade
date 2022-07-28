@@ -1,0 +1,32 @@
+h1,h2,h3{
+    color: #fff;
+}
+
+.altura{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#geral-calculadora{
+    background-color: #353742;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 5rem;
+
+}
+button{
+    height: 30px;
+    width: 50%;
+    background-color: #A9DFD8;
+    border: none;
+    border-radius: 2rem;
+}
+.areadacalculadora{
+    display: flex;
+    justify-content: center;
+}
