@@ -5,16 +5,42 @@ function main()
  var num2 = parseFloat(document.getElementById("num2").value);
  var texto='';
 
- if(document.getElementById('soma').checked)
+ if(document.getElementById('IMC').checked)
+  texto = IMC(num1, num2);
+  if(document.getElementById('soma').checked)
   texto = soma(num1, num2);
- 
+  if(document.getElementById('subtracao').checked)
+  texto = subtracao(num1, num2);
+  if(document.getElementById('multiplicacao').checked)
+  texto = multiplicacao(num1, num2);
+  if(document.getElementById('divisao').checked)
+  texto = divisao(num1, num2);
 
  resp.innerHTML = texto;
 }
 
-function soma(x, y)
+function IMC(x, y)
 {
   
     return (y/((x*x)/10000));
 }
-
+function soma(x, y)
+{
+  
+    return (x + y);
+}
+function subtracao(x, y)
+{
+  
+    return (x - y);
+}
+function multiplicacao(x, y)
+{
+  
+    return (x * y);
+}
+function divisao(x, y)
+{
+  
+    return (x / y);
+}
