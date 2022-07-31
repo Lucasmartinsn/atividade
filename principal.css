@@ -1,5 +1,5 @@
 h1,h2,h3,p{
-    color: #fff;
+    color: rgb(233, 220, 220);
 }
 .divcalculadora{
     background-color: #353742;
@@ -11,6 +11,7 @@ h1,h2,h3,p{
     margin-top: 5rem;
     margin: 1rem;
 }
+
 .divinfo{
     background-color: #353742;
     display: flex;
@@ -39,4 +40,11 @@ p{
     display: flex;
     justify-content: center;
    
+}
+.retorno{
+    background-color: #fff;
+}
+.inputs{
+    display: flex;
+    margin-bottom: 1rem;
 }
