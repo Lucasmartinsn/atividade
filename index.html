@@ -9,16 +9,30 @@
     <div class="geraldiv">
         <div id="teste">
             <div class="divcalculadora">
-                <h1>Calculadora de IMC</h1>
-                 <h3>Altura:</h3><input id="num1" type="number"> <br />
-                 <h3>Peso:</h3><input id="num2" type="number"> <br />
-                 <input type="radio" name="calc" id="soma"/> precione<br />
+                <h1>Calculadora</h1>
+                <div> <h3>Valor 1:</h3><input id="num1" type="number"> <br /></div>
+                 <div><h3>Valor 2:</h3><input id="num2" type="number"> <br /></div>
+                 <div class="inputs">
+                    <div>
+                        <input type="radio" name="calc" id="IMC"/> Calcular o IMC<br />
+                        <input type="radio" name="calc" id="soma"/> Soma <br />
+                    </div>
+                    <div>
+                        <input type="radio" name="calc" id="subtracao"/> Subtração<br />
+                        <input type="radio" name="calc" id="multiplicacao"/> Multiplicação <br />
+                        <input type="radio" name="calc" id="divisao"/> Divisão<br />
+                    </div>
+                 </div>
                   <button onclick="main()">Calcular</button><br />
             
-                  <h3>O seu IMC è:</h3> <div id="resp"></div>
+                  <div><h3>O seu IMC è:</h3>
+                     <div class="retorno" id="resp"></div>
+                </div>
             </div>
             <div class="divinfo">
                 <p>
+                    Valor 1 Recebe Altura em centimetros <br>
+                    Valor 2 Recebe Peso em kg <br> <br>
                     Listagem de resultados do IMC <br> <br>
                     MENOR QUE 18,5	MAGREZA <br>
                     ENTRE 18,5 E 24,9	NORMAL	<br>
